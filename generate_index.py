@@ -2,6 +2,7 @@ import os
 import json
 import re
 import sys
+import csv
 from bs4 import BeautifulSoup
 from pathlib import Path
 from collections import defaultdict
@@ -12,12 +13,11 @@ frequencies = defaultdict(list) #inverted index (word -> document posting)
 file_count = 0
 
 if __name__ == "__main__":
-
     #recursively iterate through all files in given directory
     for root, dirs, files in os.walk(directory):
         for file in files:
             file_count += 1
-            
+
             #load json data from joined file path
             file_path = os.path.join(root, file)
             #print(os.path.join(root, file))
@@ -45,14 +45,21 @@ if __name__ == "__main__":
     #write basic report numbers to file
     unique_tokens = len(frequencies)
     f = open('report.txt', 'w+')
-    report_str = 'tokens: {}\ntotal_size: {}\nfile_count: {}'.format(unique_tokens, sys.getsizeof(frequencies), file_count)
+    report_str = 'tokens: {}\ntotal_size: {}\nfile_count: {}\nword frequencies'.format(unique_tokens, sys.getsizeof(frequencies), file_count)
     f.write(report_str)
     f.close()
 
-    #write frequency dict to file for testing
+    #write frequency dict to csv file for testing
+    f = open('frequencies.csv', 'w+', newline='')
+    csv_writer = csv.writer(f)
+    csv_writer.writerows(frequencies.items())
+    f.close()
+    #for writing to plain text file
+    """
     f = open('frequencies.txt', 'w+')
     frequency_str = ''
     for k,v in frequencies.items():
         frequency_str += '{}={}\n'.format(k, v)
     f.write(frequency_str)
     f.close()
+    """
