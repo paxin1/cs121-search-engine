@@ -6,10 +6,13 @@ import csv
 from bs4 import BeautifulSoup
 from pathlib import Path
 from collections import defaultdict
+from nltk.stem import PorterStemmer
 
 directory = "D:\\APP_Downloads\\DEV" #directory path to recurse through
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
+
+ps = PorterStemmer() #stemmer from nltk library
 
 #recursively iterate through all files in given directory
 def process_directory():
@@ -28,7 +31,9 @@ def process_directory():
             #parse json content tag for tokens
             soup = BeautifulSoup(data["content"], features="html.parser")
             dup_tokens = re.findall('[a-zA-Z0-9]{1,}', soup.get_text())
-            dup_tokens = [token.lower() for token in dup_tokens]
+            #lowercase and stem tokens for better textual matches
+            dup_tokens = [ps.stem(token.lower()) for token in dup_tokens]
+
             #create frequency dict for tokens in current file
             cur_frequencies = {}
             for word in dup_tokens:
@@ -42,6 +47,8 @@ def process_directory():
             for item in cur_frequencies.items():
                 frequencies[item[0]].append({"name": file, "frequency": item[1]})
     return file_count
+
+
 def create_report(file_count):
     #write basic report numbers to file
     unique_tokens = len(frequencies)
@@ -50,19 +57,21 @@ def create_report(file_count):
     f.write(report_str)
     f.close()
 
+
 def create_csv_report():
     #write frequency dict to csv file for testing
     f = open('frequencies.csv', 'w+', newline='')
     csv_writer = csv.writer(f)
     csv_writer.writerows(frequencies.items())
-    f.close()  
+    f.close()
+
+
 if __name__ == "__main__":
     count = process_directory()
     create_report(count)
     create_csv_report()
 
 
-    
     #for writing to plain text file
     """
     f = open('frequencies.txt', 'w+')
