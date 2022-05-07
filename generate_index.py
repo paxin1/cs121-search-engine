@@ -42,6 +42,7 @@ def process_directory():
             for item in cur_frequencies.items():
                 frequencies[item[0]].append({"name": file, "frequency": item[1]})
     return file_count
+#create a analytic report
 def create_report(file_count):
     #write basic report numbers to file
     unique_tokens = len(frequencies)
@@ -50,6 +51,7 @@ def create_report(file_count):
     f.write(report_str)
     f.close()
 
+#write words and frequencies into a csv file
 def create_csv_report():
     #write frequency dict to csv file for testing
     f = open('frequencies.csv', 'w+', newline='')
