@@ -101,12 +101,12 @@ def search_for(query):
     return get_top_five_of(indexes)
 
 if __name__ == "__main__":
-    start = time.time()
+    #start = time.time()
     count = process_directory()
     create_report(count)
     create_csv_report()
-    end = time.time()
-    print("Elapsed time: " + (str)(end-start))
+    #end = time.time()
+    #print("Elapsed time: " + (str)(end-start))
     #for writing to plain text file
     """
     f = open('frequencies.txt', 'w+')
