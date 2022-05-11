@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 from collections import defaultdict
 from nltk.stem import PorterStemmer
+import time
 
 directory = "D:\\APP_Downloads\\DEV" #directory path to recurse through
 
@@ -32,17 +33,16 @@ def process_directory():
             #parse json content tag for tokens
             soup = BeautifulSoup(data["content"], features="html.parser")
             dup_tokens = re.findall('[a-zA-Z0-9]{1,}', soup.get_text())
-            #lowercase and stem tokens for better textual matches
-            dup_tokens = [ps.stem(token.lower()) for token in dup_tokens]
 
             #create frequency dict for tokens in current file
             cur_frequencies = {}
             for word in dup_tokens:
-                
+                # lowercase and stem tokens for better textual matches
+                stemmed_word = ps.stem(word.lower())
                 try:
-                    cur_frequencies[word] += 1
+                    cur_frequencies[stemmed_word] += 1
                 except:
-                    cur_frequencies[word] = 1
+                    cur_frequencies[stemmed_word] = 1
 
             #add words and document postings to inverted index
             for item in cur_frequencies.items():
@@ -101,9 +101,12 @@ def search_for(query):
     return get_top_five_of(indexes)
 
 if __name__ == "__main__":
+    start = time.time()
     count = process_directory()
     create_report(count)
     create_csv_report()
+    end = time.time()
+    print("Elapsed time: " + (str)(end-start))
     #for writing to plain text file
     """
     f = open('frequencies.txt', 'w+')
