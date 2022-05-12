@@ -96,7 +96,6 @@ def search_for(query):
     csv_reader = csv.reader(open('frequencies.csv', "r"), delimiter=",")
     for row in csv_reader:
         if query == row[0]:
-            print(row[1])
             indexes = list(eval(row[1]))
             break
     return get_top_five_of(indexes)
