@@ -93,10 +93,11 @@ def get_top_five_of(indexes):
 #returns the top 5 results in a list that match the query
 def search_for(query):
     indexes = defaultdict(list)
-    for item in frequencies.items():
-        #query match
-        if query == item[0]:
-            indexes = item[1]
+    csv_reader = csv.reader(open('frequencies.csv', "r"), delimiter=",")
+    for row in csv_reader:
+        if query == row[0]:
+            print(row[1])
+            indexes = list(eval(row[1]))
             break
     return get_top_five_of(indexes)
 
@@ -105,6 +106,7 @@ if __name__ == "__main__":
     count = process_directory()
     create_report(count)
     create_csv_report()
+    search_for("uci")
     #end = time.time()
     #print("Elapsed time: " + (str)(end-start))
     #for writing to plain text file
