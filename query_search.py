@@ -55,7 +55,6 @@ def get_top_five_of(indexes):
                 break
             if len(docs) == 0:
                 break
-
             #if all indexes on same url handle adding url index to top_five return list
             if all(x == docs[0] for x in docs):
                 current_freq = sum([term_indexes[1]['frequency'] for term_indexes in indexes])
@@ -83,13 +82,14 @@ def get_top_five_of(indexes):
 
 
 # returns the top 5 results in a list that match the query
-def search_for(input_string):
+def search_for(stemmed_queries):
     query_indexes = []
 
     #split input into inidividual terms and boolean
-    queries = [query.strip() for query in input_string.split("and")]
-    queries = list(set(queries))
-    if len(queries) > 1:
+    #queries = [query.strip() for query in input_string.split("and")]
+    #queries = list(set(queries))
+
+    if len(stemmed_queries) > 1:
         query_indexes.append('and')
     else:
         query_indexes.append('none')
@@ -98,9 +98,10 @@ def search_for(input_string):
     indexes = defaultdict(list)
     data = open('frequencies.csv', "r")
     csv_reader = csv.reader(data, delimiter="|", quoting=csv.QUOTE_NONE)
-    for query in queries:
+    for query in stemmed_queries:
         data.seek(0)
         found = False
+        print(query)
         for row in csv_reader:
             if query == row[0]:
                 #info = ''.join([column for column in row[1:]])
@@ -115,14 +116,15 @@ def search_for(input_string):
 
 def main():
     while True:
-        query = input("Enter a query (q to quit): ")
-        if query == 'q':
+        queries = input("Enter a query (q to quit): ")
+        if queries == 'q':
             break
         # stem the query terms
-        stemmed_query = ps.stem(query.lower())
-        print(search_for(stemmed_query))
+        #stemmed_query = ps.stem(query.lower())
+        stemmed_queries = [ps.stem(query.strip().lower()) for query in queries.split("and")]
+        print(search_for(stemmed_queries))
 
 
 if __name__ == "__main__":
-    gi.main() #uncomment if need to initialize index
+    #gi.main() #uncomment if need to initialize index
     main()
