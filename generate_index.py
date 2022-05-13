@@ -62,43 +62,10 @@ def create_report(file_count):
 def create_csv_report():
     #write frequency dict to csv file for testing
     f = open('frequencies.csv', 'w+', newline='')
-    csv_writer = csv.writer(f)
+    csv_writer = csv.writer(f, delimiter='|')
     csv_writer.writerows(frequencies.items())
     f.close()
 
-def get_top_five_of(indexes):
-    top_five = []
-    while(len(top_five) < 5 and len(indexes) > 0):
-        #the maximum frquency and name in the current index
-        max_freq = 0
-        max_name = ""
-        max_index = -1
-        #loop through indexes to find the maximum
-        for i in range(len(indexes)):
-            if max_freq < indexes[i]['frequency']:
-                max_freq = indexes[i]['frequency']
-                max_name = indexes[i]['name']
-                #maximum identified
-                max_index = i
-        #no max
-        if(max_freq == 0):
-            break
-        elif(len(max_name) > 0 and max_index > -1):
-            top_five.append({"name": max_name, "frequency": max_freq})
-            #remove from indexes
-            del indexes[max_index]
-    #return the top 5 or less results
-    return top_five
-
-#returns the top 5 results in a list that match the query
-def search_for(query):
-    indexes = defaultdict(list)
-    csv_reader = csv.reader(open('frequencies.csv', "r"), delimiter=",")
-    for row in csv_reader:
-        if query == row[0]:
-            indexes = list(eval(row[1]))
-            break
-    return get_top_five_of(indexes)
 
 if __name__ == "__main__":
     #start = time.time()
