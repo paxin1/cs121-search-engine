@@ -14,7 +14,7 @@ def get_top_five_of(indexes):
     #get modifier from first element in indexes
     modifier = indexes.pop(0)
     top_five = []
-
+    
     #handle search with no booleans
     if modifier == 'none':
         term_indexes = indexes[0]
@@ -23,8 +23,8 @@ def get_top_five_of(indexes):
                 if top_five[-1]['frequency'] < term_indexes[i]['frequency']:
                     bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency'])
                     del top_five[-1]
-            else:
-                bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency'])
+            #else:
+                #bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency'])
 
     #handle search with and boolean
     elif modifier == 'and':
@@ -59,17 +59,33 @@ def get_top_five_of(indexes):
             else:
                 min_list_pos = docs.index(min(docs))
                 del indexes[min_list_pos][1]
-    print('f')
     # return the top 5 or less results
     return top_five
 
-
+#convert a list of string dicts into actually dictionary
+#return a dict ->{url:freq}
+def convert_string_dict(string):
+    result_dict = defaultdict(int)
+    for char in row[1]:
+        if char == "}":
+            temp += char
+            temp = temp.replace("'", '"')
+            temp_dict = json.loads(temp)
+            result_dict[temp_dict["url"]] += 1;
+            temp = ""
+        elif char == "{":
+            temp += char
+        else:
+            if "{" in temp:
+                temp += char
+    return result_dict
 # returns the top 5 results in a list that match the query
 def search_for(input_string):
     query_indexes = []
-
+    #dictionary that stores frequencies of query and link => {url:freq}
+    top_urls = defaultdict(int)
     #split input into inidividual terms and boolean
-    queries = [query.strip() for query in input_string.split("and")]
+    queries = [query.strip() for query in input_string.lower().split("and")]
     queries = list(set(queries))
     if len(queries) > 1:
         query_indexes.append('and')
@@ -83,26 +99,32 @@ def search_for(input_string):
     for query in queries:
         data.seek(0)
         found = False
+        #check each row in the csv
+        #find the matching query key word
+        #add it to the top_urls dict
         for row in csv_reader:
-            if query == row[0]:
-                #info = ''.join([column for column in row[1:]])
-                indexes = list(eval(row[1]))
-                query_indexes.append([query] + indexes)
-                found = True
-                break
-        if not found:
-            query_indexes.append([query])
+            if query.lower() == row[0].lower():
+                temp = convert_string_dict(row[1])
+                top_urls.update(temp)
+            break
+        #if not found:
+                #query_indexes.append([query])
+    query_indexes.append([query]+ [top_urls])
+    print(query_indexes)
+    #for r in query_indexes:
+        #print(r)
     return get_top_five_of(query_indexes)
 
 
 def main():
     while True:
-        query = input("Enter a query (q to quit): ")
-        if query == 'q':
+        queries = input("Enter a query (q to quit): ")
+        if queries == 'q':
             break
-        # stem the query terms
-        stemmed_query = ps.stem(query.lower())
-        print(search_for(stemmed_query))
+        #stem the query terms
+        print(queries)
+        stemmed_queries = [ps.stem(query) for query in queries]
+        print(search_for(stemmed_queries))
 
 
 if __name__ == "__main__":

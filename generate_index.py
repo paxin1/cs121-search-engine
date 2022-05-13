@@ -11,8 +11,8 @@ from collections import defaultdict
 from nltk.stem import PorterStemmer
 import time
 
-#directory = "D:\\APP_Downloads\\DEV" #directory path to recurse through
-directory = "BRUH"
+#directory = "D:\APP_Downloads\developer (1)\DEV\asterix_ics_uci_edu" #directory path to recurse through
+directory = "D:\\APP_Downloads\\TEST"
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
 
@@ -47,10 +47,13 @@ def process_directory():
                     cur_frequencies[stemmed_word] += 1
                 except:
                     cur_frequencies[stemmed_word] = 1
-
+    
             #add words and document postings to inverted index
             for item in cur_frequencies.items():
-                bisect.insort(frequencies[item[0]], {"name": url, "frequency": item[1]}, key=lambda x:x["name"])
+                frequencies[item[0]].append({"name": file, "frequency": item[1], "url":url})
+    for item in frequencies.items():
+        frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
+    print("index tokenization completed!")
     return file_count
 
 #create a analytic report
@@ -68,7 +71,7 @@ def create_csv_report():
     #write frequency dict to csv file for testing
     f = open('frequencies.csv', 'w+', newline='')
     csv_writer = csv.writer(f, delimiter='|')
-    csv_writer.writerows(frequencies.items())
+    csv_writer.writerows(list(frequencies.items()))
     f.close()
 
 def main():
