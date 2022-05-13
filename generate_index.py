@@ -11,8 +11,13 @@ from collections import defaultdict
 from nltk.stem import PorterStemmer
 import time
 
+<<<<<<< HEAD
 #directory = "D:\APP_Downloads\developer (1)\DEV\asterix_ics_uci_edu" #directory path to recurse through
 directory = "D:\\APP_Downloads\\TEST"
+=======
+#directory = "D:\\APP_Downloads\\DEV" #directory path to recurse through
+directory = "DEV\\aiclub_ics_uci_edu"
+>>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
 
@@ -47,6 +52,7 @@ def process_directory():
                     cur_frequencies[stemmed_word] += 1
                 except:
                     cur_frequencies[stemmed_word] = 1
+<<<<<<< HEAD
     
             #add words and document postings to inverted index
             for item in cur_frequencies.items():
@@ -54,6 +60,16 @@ def process_directory():
     for item in frequencies.items():
         frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
     print("index tokenization completed!")
+=======
+
+            #add words and document postings to inverted index sorted by url in descending order
+            for item in cur_frequencies.items():
+                frequencies[item[0]].append({"name": url, "frequency": item[1]})
+                #bisect.insort(frequencies[item[0]], {"name": url, "frequency": item[1]}, key=lambda x:x["name"])
+    for item in frequencies.items():
+        frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
+    print(frequencies)
+>>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
     return file_count
 
 #create a analytic report
