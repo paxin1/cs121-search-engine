@@ -14,9 +14,10 @@ def get_top_five_of(indexes):
     #get modifier from first element in indexes
     modifier = indexes.pop(0)
     top_five = []
+    min_top_five = {'frequency': 0}
 
     #handle search with no booleans
-    if modifier == 'none':
+    """ if modifier == 'none':
         term_indexes = indexes[0]
         for i in range(1, len(term_indexes)):
             if len(top_five) == 5:
@@ -24,7 +25,19 @@ def get_top_five_of(indexes):
                     bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency'])
                     del top_five[-1]
             else:
-                bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency'])
+                bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency']) """
+    if modifier == 'none':
+        term_indexes = indexes[0]
+        #iterates through indexes and inserts current index in descending order by frequency
+        for i in range(1, len(term_indexes)):
+            #removes lowest element if needed
+            if len(top_five) == 5:
+                if min_top_five['frequency'] < term_indexes[i]['frequency']:
+                    top_five.append(term_indexes[i])
+                    top_five.remove(min(top_five, key=lambda x: x['frequency']))
+                    min_top_five = min(top_five, key=lambda x: x['frequency'])
+            else:
+                top_five.append(term_indexes[i])
 
     #handle search with and boolean
     elif modifier == 'and':
@@ -47,11 +60,17 @@ def get_top_five_of(indexes):
             if all(x == docs[0] for x in docs):
                 current_freq = sum([term_indexes[1]['frequency'] for term_indexes in indexes])
                 if len(top_five) == 5:
-                    if top_five[-1]['frequency'] < current_freq:
+                    if min_top_five['frequency'] < current_freq:
+                        top_five.append({'name': docs[0], 'frequency': current_freq})
+                        top_five.remove(min(top_five, key=lambda x: x['frequency']))
+                        min_top_five = min(top_five, key=lambda x: x['frequency'])
+                else:
+                    top_five.append({'name': docs[0], 'frequency': current_freq})
+                    """ if top_five[-1]['frequency'] < current_freq:
                         bisect.insort(top_five, {'name': docs[0], 'frequency': current_freq}, key=lambda x: -x['frequency'])
                         del top_five[-1]
                 else:
-                    bisect.insort(top_five, {'name': docs[0], 'frequency': current_freq}, key=lambda x: -x['frequency'])
+                    bisect.insort(top_five, {'name': docs[0], 'frequency': current_freq}, key=lambda x: -x['frequency']) """
                 for term_indexes in indexes:
                     del term_indexes[1]
 
@@ -59,7 +78,6 @@ def get_top_five_of(indexes):
             else:
                 min_list_pos = docs.index(min(docs))
                 del indexes[min_list_pos][1]
-    print('f')
     # return the top 5 or less results
     return top_five
 
@@ -106,5 +124,5 @@ def main():
 
 
 if __name__ == "__main__":
-    #gi.main() #uncomment if need to initialize index
+    gi.main() #uncomment if need to initialize index
     main()
