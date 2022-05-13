@@ -4,20 +4,16 @@ import json
 import re
 import sys
 import csv
-import bisect
 from bs4 import BeautifulSoup
 from pathlib import Path
 from collections import defaultdict
 from nltk.stem import PorterStemmer
 import time
 
-<<<<<<< HEAD
-#directory = "D:\APP_Downloads\developer (1)\DEV\asterix_ics_uci_edu" #directory path to recurse through
-directory = "D:\\APP_Downloads\\TEST"
-=======
-#directory = "D:\\APP_Downloads\\DEV" #directory path to recurse through
-directory = "DEV\\aiclub_ics_uci_edu"
->>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
+
+directory = "D:\\APP_Downloads\\developer (1)\\DEV" #directory path to recurse through
+#directory = "D:\\APP_Downloads\\TEST"
+
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
 
@@ -30,21 +26,23 @@ def process_directory():
 
         for file in files:
             file_count += 1
-
+            print("running")
             #load json data from joined file path
             file_path = os.path.join(root, file)
             #print(os.path.join(root, file))
-            f = open(file_path)
-            data = json.load(f)
+            try:
+                f = open(file_path)
+                data = json.load(f)
 
-            url = data["url"]
+                url = data["url"]
+                #parse json content tag for tokens
+                soup = BeautifulSoup(data["content"], features="html.parser")
+                dup_tokens = re.findall('[a-zA-Z0-9]{1,}', soup.get_text())
 
-            #parse json content tag for tokens
-            soup = BeautifulSoup(data["content"], features="html.parser")
-            dup_tokens = re.findall('[a-zA-Z0-9]{1,}', soup.get_text())
-
-            #create frequency dict for tokens in current file
-            cur_frequencies = {}
+                #create frequency dict for tokens in current file
+                cur_frequencies = {}
+            except Exception as e:
+                continue
             for word in dup_tokens:
                 # lowercase and stem tokens for better textual matches
                 stemmed_word = ps.stem(word.lower())
@@ -52,24 +50,13 @@ def process_directory():
                     cur_frequencies[stemmed_word] += 1
                 except:
                     cur_frequencies[stemmed_word] = 1
-<<<<<<< HEAD
+
     
             #add words and document postings to inverted index
             for item in cur_frequencies.items():
                 frequencies[item[0]].append({"name": file, "frequency": item[1], "url":url})
     for item in frequencies.items():
         frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
-    print("index tokenization completed!")
-=======
-
-            #add words and document postings to inverted index sorted by url in descending order
-            for item in cur_frequencies.items():
-                frequencies[item[0]].append({"name": url, "frequency": item[1]})
-                #bisect.insort(frequencies[item[0]], {"name": url, "frequency": item[1]}, key=lambda x:x["name"])
-    for item in frequencies.items():
-        frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
-    print(frequencies)
->>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
     return file_count
 
 #create a analytic report

@@ -10,46 +10,38 @@ ps = PorterStemmer()
 csv.field_size_limit(100000000)
 
 
-def get_top_five_of(indexes):
+def get_top_five_of(indexes, length):
     #get modifier from first element in indexes
     modifier = indexes.pop(0)
     top_five = []
-<<<<<<< HEAD
-    
-=======
+
     min_top_five = {'frequency': 0}
 
->>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
+    sorted_dict_list = sorted(indexes[0].items(), key = lambda x:x[1], reverse = True)
     #handle search with no booleans
-    """ if modifier == 'none':
-        term_indexes = indexes[0]
-        for i in range(1, len(term_indexes)):
-            if len(top_five) == 5:
-                if top_five[-1]['frequency'] < term_indexes[i]['frequency']:
-                    bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency'])
-                    del top_five[-1]
-<<<<<<< HEAD
-            #else:
-                #bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency'])
-=======
-            else:
-                bisect.insort(top_five, term_indexes[i], key=lambda x: -x['frequency']) """
-    if modifier == 'none':
-        term_indexes = indexes[0]
+    if modifier is None:
+        #term_indexes = indexes[0]
+        
         #iterates through indexes and inserts current index in descending order by frequency
-        for i in range(1, len(term_indexes)):
+        #for i in range(1, len(term_indexes)):
             #removes lowest element if needed
-            if len(top_five) == 5:
-                if min_top_five['frequency'] < term_indexes[i]['frequency']:
-                    top_five.append(term_indexes[i])
-                    top_five.remove(min(top_five, key=lambda x: x['frequency']))
-                    min_top_five = min(top_five, key=lambda x: x['frequency'])
-            else:
-                top_five.append(term_indexes[i])
->>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
-
+            #if len(top_five) == 5:
+                #if min_top_five['frequency'] < term_indexes[i]['frequency']:
+                    #top_five.append(term_indexes[i]["url"])
+                    #top_five.remove(min(top_five, key=lambda x: x['frequency']))
+                    #min_top_five = min(top_five, key=lambda x: x['frequency'])
+            #else:
+                #top_five.append(term_indexes[i]["url"])
+        count  =0
+        for url in sorted_dict_list:
+            if count == 5:
+                break
+            top_five.append(url)
+            count += 1;
+        
     #handle search with and boolean
     elif modifier == 'and':
+        """
         running = True
         while running:
             docs = []
@@ -74,11 +66,6 @@ def get_top_five_of(indexes):
                         min_top_five = min(top_five, key=lambda x: x['frequency'])
                 else:
                     top_five.append({'name': docs[0], 'frequency': current_freq})
-                    """ if top_five[-1]['frequency'] < current_freq:
-                        bisect.insort(top_five, {'name': docs[0], 'frequency': current_freq}, key=lambda x: -x['frequency'])
-                        del top_five[-1]
-                else:
-                    bisect.insort(top_five, {'name': docs[0], 'frequency': current_freq}, key=lambda x: -x['frequency']) """
                 for term_indexes in indexes:
                     del term_indexes[1]
 
@@ -86,14 +73,24 @@ def get_top_five_of(indexes):
             else:
                 min_list_pos = docs.index(min(docs))
                 del indexes[min_list_pos][1]
+        """
+        count  =0
+        for url in sorted_dict_list:
+            if count == 5:
+                break
+            if url[1] == length:
+                top_five.append(url)
+                count += 1; 
     # return the top 5 or less results
     return top_five
 
-#convert a list of string dicts into actually dictionary
+
 #return a dict ->{url:freq}
+#convert a list of string dicts into actually dictionary
 def convert_string_dict(string):
     result_dict = defaultdict(int)
-    for char in row[1]:
+    temp = ""
+    for char in string:
         if char == "}":
             temp += char
             temp = temp.replace("'", '"')
@@ -106,52 +103,34 @@ def convert_string_dict(string):
             if "{" in temp:
                 temp += char
     return result_dict
+
 # returns the top 5 results in a list that match the query
-def search_for(stemmed_queries):
+def search_for(stemmed_queries, key_word = None):
     query_indexes = []
+    query_len = len(stemmed_queries)
     #dictionary that stores frequencies of query and link => {url:freq}
     top_urls = defaultdict(int)
     #split input into inidividual terms and boolean
-<<<<<<< HEAD
-    queries = [query.strip() for query in input_string.lower().split("and")]
-    queries = list(set(queries))
-    if len(queries) > 1:
-=======
-    #queries = [query.strip() for query in input_string.split("and")]
-    #queries = list(set(queries))
-
-    if len(stemmed_queries) > 1:
->>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
-        query_indexes.append('and')
-    else:
-        query_indexes.append('none')
-
+    query_indexes.append(key_word)
     #get indexes for each query term from frequencies csv
     indexes = defaultdict(list)
     data = open('frequencies.csv', "r")
     csv_reader = csv.reader(data, delimiter="|", quoting=csv.QUOTE_NONE)
     for query in stemmed_queries:
         data.seek(0)
-        found = False
-<<<<<<< HEAD
         #check each row in the csv
         #find the matching query key word
         #add it to the top_urls dict
-=======
-        print(query)
->>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
         for row in csv_reader:
             if query.lower() == row[0].lower():
-                temp = convert_string_dict(row[1])
-                top_urls.update(temp)
-            break
+                result = convert_string_dict(row[1])
+                top_urls.update(result)
+                break
         #if not found:
                 #query_indexes.append([query])
-    query_indexes.append([query]+ [top_urls])
-    print(query_indexes)
-    #for r in query_indexes:
-        #print(r)
-    return get_top_five_of(query_indexes)
+    query_indexes.extend([top_urls])
+    #print(query_indexes)
+    return get_top_five_of(query_indexes, query_len)
 
 
 def main():
@@ -159,16 +138,19 @@ def main():
         queries = input("Enter a query (q to quit): ")
         if queries == 'q':
             break
-<<<<<<< HEAD
+
         #stem the query terms
-        print(queries)
-        stemmed_queries = [ps.stem(query) for query in queries]
-=======
+        #print(queries)
+        #stemmed_queries = [ps.stem(query) for query in queries]
+
         # stem the query terms
-        #stemmed_query = ps.stem(query.lower())
-        stemmed_queries = [ps.stem(query.strip().lower()) for query in queries.split("and")]
->>>>>>> 994c48621b1d9aac51ffde1da18464da96e0b8ca
-        print(search_for(stemmed_queries))
+        k_word = None
+        if "and" in queries.lower():
+            stemmed_queries = [ps.stem(query.strip().lower()) for query in queries.split("and")]
+            k_word = "and"
+        else:
+            stemmed_queries = [ps.stem(query.strip().lower()) for query in queries.split(" ")]
+        print(search_for(stemmed_queries, k_word))
 
 
 if __name__ == "__main__":
