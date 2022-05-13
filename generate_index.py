@@ -12,7 +12,7 @@ from nltk.stem import PorterStemmer
 import time
 
 #directory = "D:\\APP_Downloads\\DEV" #directory path to recurse through
-directory = "DEV"
+directory = "DEV\\aiclub_ics_uci_edu"
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
 
@@ -50,10 +50,11 @@ def process_directory():
 
             #add words and document postings to inverted index sorted by url in descending order
             for item in cur_frequencies.items():
-                frequencies[item[0]].append({"name": file, "frequency": item[1]})
+                frequencies[item[0]].append({"name": url, "frequency": item[1]})
                 #bisect.insort(frequencies[item[0]], {"name": url, "frequency": item[1]}, key=lambda x:x["name"])
     for item in frequencies.items():
         frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
+    print(frequencies)
     return file_count
 
 
