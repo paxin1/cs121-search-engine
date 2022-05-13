@@ -4,13 +4,15 @@ import json
 import re
 import sys
 import csv
+import bisect
 from bs4 import BeautifulSoup
 from pathlib import Path
 from collections import defaultdict
 from nltk.stem import PorterStemmer
 import time
 
-directory = "D:\\APP_Downloads\\DEV" #directory path to recurse through
+#directory = "D:\\APP_Downloads\\DEV" #directory path to recurse through
+directory = "BRUH"
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
 
@@ -30,6 +32,8 @@ def process_directory():
             f = open(file_path)
             data = json.load(f)
 
+            url = data["url"]
+
             #parse json content tag for tokens
             soup = BeautifulSoup(data["content"], features="html.parser")
             dup_tokens = re.findall('[a-zA-Z0-9]{1,}', soup.get_text())
@@ -46,7 +50,7 @@ def process_directory():
 
             #add words and document postings to inverted index
             for item in cur_frequencies.items():
-                frequencies[item[0]].append({"name": file, "frequency": item[1]})
+                bisect.insort(frequencies[item[0]], {"name": url, "frequency": item[1]}, key=lambda x:x["name"])
     return file_count
 
 
@@ -66,12 +70,14 @@ def create_csv_report():
     csv_writer.writerows(frequencies.items())
     f.close()
 
-
-if __name__ == "__main__":
-    #start = time.time()
+def main():
     count = process_directory()
     create_report(count)
     create_csv_report()
+
+if __name__ == "__main__":
+    #start = time.time()
+    main()
     #end = time.time()
     #print("Elapsed time: " + (str)(end-start))
     #for writing to plain text file
