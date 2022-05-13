@@ -72,7 +72,6 @@ if __name__ == "__main__":
     count = process_directory()
     create_report(count)
     create_csv_report()
-    search_for("uci")
     #end = time.time()
     #print("Elapsed time: " + (str)(end-start))
     #for writing to plain text file

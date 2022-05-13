@@ -1,8 +1,10 @@
+import sys
 from collections import defaultdict
 import csv
 from nltk.stem import PorterStemmer
 
 ps = PorterStemmer()
+csv.field_size_limit(100000000)
 
 
 def get_top_five_of(indexes):
@@ -36,8 +38,8 @@ def search_for(query):
     csv_reader = csv.reader(open('frequencies.csv', "r"), delimiter="|", quoting=csv.QUOTE_NONE)
     for row in csv_reader:
         if query == row[0]:
-            info = ''.join([column for column in row[1:]])
-            indexes = list(eval(info[1:-1]))
+            #info = ''.join([column for column in row[1:]])
+            indexes = list(eval(row[1]))
             break
     return get_top_five_of(indexes)
 
