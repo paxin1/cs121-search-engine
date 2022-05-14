@@ -1,0 +1,3362 @@
+{
+    "artifici": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 5
+        }
+    ],
+    "intellig": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 5
+        }
+    ],
+    "uci": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 6
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 6
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 6
+        }
+    ],
+    "shape": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "the": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 15
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 15
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 15
+        }
+    ],
+    "futur": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "of": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 11
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 11
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 11
+        }
+    ],
+    "ai": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 5
+        }
+    ],
+    "follow": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "us": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "toggl": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "navig": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "home": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "about": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "event": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "team": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "contact": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "we": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 4
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 4
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 4
+        }
+    ],
+    "re": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "at": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "univers": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "california": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "irvin": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "is": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 4
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 4
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 4
+        }
+    ],
+    "a": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "nonprofit": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "student": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "run": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "organ": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "that": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "focus": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "on": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 5
+        }
+    ],
+    "promot": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "and": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 14
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 14
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 14
+        }
+    ],
+    "cultiv": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "disciplin": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "machin": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 6
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 6
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 6
+        }
+    ],
+    "learn": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 8
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 8
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 8
+        }
+    ],
+    "it": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "applic": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "among": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "commun": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "bi": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "weekli": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "hold": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "workshop": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 7
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 7
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 7
+        }
+    ],
+    "meet": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 5
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 5
+        }
+    ],
+    "for": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 4
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 4
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 4
+        }
+    ],
+    "curiou": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "one": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "to": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "latest": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "technolog": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "espcial": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "connect": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "from": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "profession": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "academia": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "almuni": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "industri": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "world": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "got": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "you": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "guy": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "through": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "our": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 6
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 6
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 6
+        }
+    ],
+    "uniqu": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "seminar": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "time": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "pscb": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "120": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "6pm": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "7pm": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "monday": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "onli": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "some": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "past": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "those": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "who": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "couldn": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "t": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "attend": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "due": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "space": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "constraint": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "don": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "worri": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "have": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "cover": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "catch": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "up": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "with": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "youtub": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "video": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "link": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "below": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "present": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "all": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "gener": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "fake": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "date": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "profil": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "stylegan": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "spam": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "classif": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "ic": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "day": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "style": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "transfer": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "natur": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "languag": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "process": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "hack": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "hackathon": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "comput": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "vision": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "opencv": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "3": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "2": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "1": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "q": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "session": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "data": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "analyt": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "pattern": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "pallet": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "town": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "pt": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "alexand": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "ihler": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "professor": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "advisor": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "here": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "are": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "area": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "he": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "ha": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "been": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "work": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "i": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "in": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "statist": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "method": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "approxim": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "infer": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "techniqu": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "graphic": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "model": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "my": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "includ": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "mine": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "inform": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "fusion": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "sensor": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "network": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "imag": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "biolog": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "ami": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "elsay": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "presid": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "jason": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "kahn": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "vice": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "pooja": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "kumar": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "secretari": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "uddeshya": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "treasur": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "madhumitha": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "govindaraju": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "corpor": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "chair": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 3
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 3
+        }
+    ],
+    "shivan": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "vipani": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "project": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "michael": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "wang": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "web": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "master": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "citizen": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "develop": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "maintain": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "updat": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "content": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "websit": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "over": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "year": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "kash": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "iz": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "market": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "omkar": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "pathak": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "lead": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "mentor": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 8
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 8
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 8
+        }
+    ],
+    "mathew": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "guerrero": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "historian": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "hero": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "elliot": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "alderson": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "like": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "hous": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "leav": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "zhang": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "andrew": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "laird": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "anthoni": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "luu": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "brett": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "galkowski": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "eduardo": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "corona": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "monish": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "ramadoss": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "satyam": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "tandon": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "get": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "touch": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "infom": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "6": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "email": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "aiatuci": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "gmail": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "com": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 2
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 2
+        }
+    ],
+    "thank": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "mailman": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "hi": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "way": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "sorri": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "know": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "what": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "happen": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "tri": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "later": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "design": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "by": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "themefish": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "copyright": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "right": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ],
+    "reserv": [
+        {
+            "name": "https://aiclub.ics.uci.edu/",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/#body",
+            "frequency": 1
+        },
+        {
+            "name": "https://aiclub.ics.uci.edu/index.html",
+            "frequency": 1
+        }
+    ]
+}

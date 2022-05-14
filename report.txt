@@ -1,0 +1,4 @@
+tokens: 240
+total_size: 9320
+file_count: 3
+word frequencies
