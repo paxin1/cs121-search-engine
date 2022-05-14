@@ -69,12 +69,19 @@ def create_report(f_count):
 
 
 #write words and frequencies into a csv file
+def create_json_report():
+
+    f  = open("frequencies.json", "w")
+    json_object = json.dumps(frequencies, indent=4)
+    f.write(json_object)
+
+    f.close()
+
 def create_csv_report():
     #write frequency dict to csv file for testing
     f = open('frequencies.csv', 'w+', newline='')
     csv_writer = csv.writer(f, delimiter='|')
     csv_writer.writerows(list(frequencies.items()))
-    f.close()
 
 def main():
     count = process_directory()
