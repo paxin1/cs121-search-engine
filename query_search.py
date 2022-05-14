@@ -41,7 +41,7 @@ def get_top_five_of(indexes, length):
         
     #handle search with and boolean
     elif modifier == 'and':
-        """
+        """ print(indexes)
         running = True
         while running:
             docs = []
@@ -72,8 +72,8 @@ def get_top_five_of(indexes, length):
             #if doc urls different iterate lowest url
             else:
                 min_list_pos = docs.index(min(docs))
-                del indexes[min_list_pos][1]
-        """
+                del indexes[min_list_pos][1] """
+       
         count  =0
         close_match = length // 2
         for url in sorted_dict_list:
@@ -94,9 +94,15 @@ def convert_string_dict(string):
     for char in string:
         if char == "}":
             temp += char
-            temp = temp.replace("'", '"')
+            if temp.find('\"\"') >= 0:
+                temp = temp.replace("\"\"", '\"')
+                temp = temp.replace("\'name\'", "\"name\"")
+                temp = temp.replace("\'frequency\'", "\"frequency\"")
+                temp = temp.replace("\'file\'", "\"file\"")
+            else:
+                temp = temp.replace("'", '"')
             temp_dict = json.loads(temp)
-            result_dict[temp_dict["url"]] += 1;
+            result_dict[temp_dict["name"]] = temp_dict["frequency"];
             temp = ""
         elif char == "{":
             temp += char
@@ -147,13 +153,17 @@ def main():
         # stem the query terms
         k_word = None
         if "and" in queries.lower():
-            stemmed_queries = [ps.stem(query.strip().lower()) for query in queries.split("and")]
+            split_queries = [ps.stem(query.strip().lower()) for query in queries.split("and")]
+            stemmed_queries = []
+            for split_query in split_queries:
+                stemmed_queries.extend([ps.stem(query.strip().lower()) for query in split_query.split(" ")])
             k_word = "and"
+            print(stemmed_queries)
         else:
             stemmed_queries = [ps.stem(query.strip().lower()) for query in queries.split(" ")]
         print(search_for(stemmed_queries, k_word))
 
 
 if __name__ == "__main__":
-    #gi.main() #uncomment if need to initialize index
+    gi.main() #uncomment if need to initialize index
     main()
