@@ -11,7 +11,7 @@ from nltk.stem import PorterStemmer
 import time
 
 
-directory = "C:\\Users\\alexr\\Desktop\\Spring 2022\\Information Retrieval\\cs121-search-engine\\DEV\\aiclub_ics_uci_edu" #directory path to recurse through
+directory = "DEV2\\aiclub_ics_uci_edu" #directory path to recurse through
 #directory = "D:\\APP_Downloads\\TEST"
 
 
