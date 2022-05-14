@@ -11,7 +11,7 @@ from nltk.stem import PorterStemmer
 import time
 
 
-directory = "DEV2\\aiclub_ics_uci_edu" #directory path to recurse through
+directory = "C:\\Users\\alexr\\Desktop\\Spring 2022\\Information Retrieval\\cs121-search-engine\\DEV\\aiclub_ics_uci_edu" #directory path to recurse through
 #directory = "D:\\APP_Downloads\\TEST"
 
 
@@ -77,10 +77,16 @@ def create_json_report():
 
     f.close()
 
+def create_csv_report():
+    #write frequency dict to csv file for testing
+    f = open('frequencies.csv', 'w+', newline='')
+    csv_writer = csv.writer(f, delimiter='|')
+    csv_writer.writerows(list(frequencies.items()))
+
 def main():
     count = process_directory()
     create_report(count)
-    create_json_report()
+    create_csv_report()
 
 if __name__ == "__main__":
     #start = time.time()
