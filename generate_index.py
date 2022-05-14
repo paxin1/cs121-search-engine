@@ -57,14 +57,15 @@ def process_directory():
                 frequencies[item[0]].append({"name": file, "frequency": item[1], "url":url})
     for item in frequencies.items():
         frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
+    print(file_count)
     return file_count
 
 #create a analytic report
-def create_report(file_count):
+def create_report(f_count):
     #write basic report numbers to file
     unique_tokens = len(frequencies)
     f = open('report.txt', 'w+')
-    report_str = 'tokens: {}\ntotal_size: {}\nfile_count: {}\nword frequencies'.format(unique_tokens, sys.getsizeof(frequencies), file_count)
+    report_str = 'tokens: {}\ntotal_size: {}\nfile_count: {}\nword frequencies'.format(unique_tokens, sys.getsizeof(frequencies), f_count)
     f.write(report_str)
     f.close()
 
