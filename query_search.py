@@ -75,10 +75,11 @@ def get_top_five_of(indexes, length):
                 del indexes[min_list_pos][1]
         """
         count  =0
+        close_match = length // 2
         for url in sorted_dict_list:
             if count == 5:
                 break
-            if url[1] == length:
+            if url[1] >= length:
                 top_five.append(url)
                 count += 1; 
     # return the top 5 or less results
@@ -124,8 +125,8 @@ def search_for(stemmed_queries, key_word = None):
         for row in csv_reader:
             if query.lower() == row[0].lower():
                 result = convert_string_dict(row[1])
-                top_urls.update(result)
-                break
+                for k in result.keys():
+                    top_urls[k] +=  result[k]
         #if not found:
                 #query_indexes.append([query])
     query_indexes.extend([top_urls])
