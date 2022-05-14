@@ -83,7 +83,7 @@ def get_top_five_of(indexes, length):
                 top_five.append(url)
                 count += 1; 
     # return the top 5 or less results
-    return top_five
+    return [url[0] for url in top_five]
 
 
 #return a dict ->{url:freq}
@@ -161,9 +161,9 @@ def main():
             print(stemmed_queries)
         else:
             stemmed_queries = [ps.stem(query.strip().lower()) for query in queries.split(" ")]
-        print(search_for(stemmed_queries, k_word))
+        [print(link)for link in search_for(stemmed_queries, k_word)]
 
 
 if __name__ == "__main__":
-    gi.main() #uncomment if need to initialize index
+    #gi.main() #uncomment if need to initialize index
     main()
