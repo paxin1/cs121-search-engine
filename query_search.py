@@ -5,6 +5,8 @@ import bisect
 from nltk.stem import PorterStemmer
 import generate_index as gi
 import json
+import time
+import re
 
 ps = PorterStemmer()
 csv.field_size_limit(100000000)
@@ -146,21 +148,15 @@ def main():
         if queries == 'q':
             break
 
-        #stem the query terms
-        #print(queries)
-        #stemmed_queries = [ps.stem(query) for query in queries]
-
-        # stem the query terms
+        # set keyword for search_for function
         k_word = None
-        if "and" in queries.lower():
-            split_queries = [ps.stem(query.strip().lower()) for query in queries.split("and")]
-            stemmed_queries = []
-            for split_query in split_queries:
-                stemmed_queries.extend([ps.stem(query.strip().lower()) for query in split_query.split(" ")])
+        if " and " in queries.lower():
             k_word = "and"
-            print(stemmed_queries)
-        else:
-            stemmed_queries = [ps.stem(query.strip().lower()) for query in queries.split(" ")]
+
+        # stem and split the query terms
+        stemmed_queries = [ps.stem(query.strip().lower()) for query in re.split(' and | ', queries)]
+
+        # print top 5 links
         [print(link)for link in search_for(stemmed_queries, k_word)]
 
 
