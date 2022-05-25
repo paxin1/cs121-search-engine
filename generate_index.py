@@ -11,8 +11,8 @@ from nltk.stem import PorterStemmer
 import time
 
 
-directory = "DEV2\\aiclub_ics_uci_edu" #directory path to recurse through
-#directory = "D:\\APP_Downloads\\TEST"
+#directory = "DEV2\\aiclub_ics_uci_edu" #directory path to recurse through
+directory = "D:\\APP_Downloads\\DEV"
 
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
@@ -83,22 +83,33 @@ def create_csv_report():
     csv_writer = csv.writer(f, delimiter='|')
     csv_writer.writerows(list(frequencies.items()))
 
+def create_txt_report():
+    with open('frequencies.txt', 'w+') as f:
+        for k, v in sorted(frequencies.items()):
+            f.write('{}={}\n'.format(k, v))
+
+def create_txt_bookkeeper():
+    current_character = ''
+    with open('frequencies.txt', 'r') as f, open('frequencies_bookkeeper.txt', 'w+') as b:
+        location = f.tell()
+        line = f.readline()
+        while line:
+            if line[0] > current_character:
+                current_character = line[0]
+                b.write(current_character + '=' + str(location) + '\n')
+            location = f.tell()
+            line = f.readline()
+
+
 def main():
     count = process_directory()
     create_report(count)
-    create_csv_report()
+    #create_csv_report()
+    create_txt_report()
+    create_txt_bookkeeper()
 
 if __name__ == "__main__":
-    #start = time.time()
+    start = time.time()
     main()
-    #end = time.time()
-    #print("Elapsed time: " + (str)(end-start))
-    #for writing to plain text file
-    """
-    f = open('frequencies.txt', 'w+')
-    frequency_str = ''
-    for k,v in frequencies.items():
-        frequency_str += '{}={}\n'.format(k, v)
-    f.write(frequency_str)
-    f.close()
-    """
+    end = time.time()
+    print("Elapsed time: " + (str)(end-start))
