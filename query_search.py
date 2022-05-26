@@ -99,7 +99,7 @@ def search_for(stemmed_queries, key_word=None):
     bookkeeper = defaultdict(int)
     with open('frequencies_bookkeeper.txt', 'r') as b:
         for line in b:
-            line = line.split('=')
+            line = line.rsplit('=')
             bookkeeper[line[0]] = int(line[1])
 
     # Find entry for the query in frequencies.txt
@@ -109,18 +109,17 @@ def search_for(stemmed_queries, key_word=None):
             first_character_location = bookkeeper[query[0]]
             f.seek(first_character_location)
             # If an entry is found, add the results to the top_urls dict
-            entry = f.readline().split('=', maxsplit=1)
+            entry = f.readline().rsplit('=', maxsplit=1)
             while entry[0][0] == query[0]:
                 if entry[0] == query:
                     # Result is a list of dicts with keys 'name' (representing url) and 'frequency'
                     result = list(eval(entry[1]))
                     for f_dict in result:
                         top_urls[f_dict['name']] += f_dict['frequency']
-                entry = f.readline().split('=', maxsplit=1)
-
+                entry = f.readline().rsplit('=', maxsplit=1)
     query_indexes.extend([top_urls])
-    return get_top_five_of(query_indexes, query_len)
-
+    result = get_top_five_of(query_indexes, query_len)
+    return result
 
 def main():
     while True:
