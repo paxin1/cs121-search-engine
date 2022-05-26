@@ -112,7 +112,6 @@ def search_for(stemmed_queries, key_word=None):
             entry = f.readline().split('=', maxsplit=1)
             while entry[0][0] == query[0]:
                 if entry[0] == query:
-                    print(entry[0], entry[1])
                     # Result is a list of dicts with keys 'name' (representing url) and 'frequency'
                     result = list(eval(entry[1]))
                     for f_dict in result:
