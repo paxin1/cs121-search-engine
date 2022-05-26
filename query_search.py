@@ -109,14 +109,15 @@ def search_for(stemmed_queries, key_word=None):
             first_character_location = bookkeeper[query[0]]
             f.seek(first_character_location)
             # If an entry is found, add the results to the top_urls dict
-            entry = f.readline().rpartition('=')
+            entry = f.readline().rsplit('=', maxsplit=1)
             while entry[0][0] == query[0]:
                 if entry[0] == query:
                     # Result is a list of dicts with keys 'name' (representing url) and 'frequency'
+                    print(entry[1])
                     result = list(eval(entry[1]))
                     for f_dict in result:
                         top_urls[f_dict['name']] += f_dict['frequency']
-                entry = f.readline().rpartition('=')
+                entry = f.readline().rsplit('=', maxsplit=1)
     query_indexes.extend([top_urls])
     result = get_top_five_of(query_indexes, query_len)
     return result
