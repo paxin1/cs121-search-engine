@@ -86,12 +86,8 @@ def get_top_five_of(indexes, length):
 
 
 def search_for(stemmed_queries, key_word=None):
-    query_indexes = []
+    query_indexes = defaultdict(list)
     query_len = len(stemmed_queries)
-    # dictionary that stores frequencies of query and link => {url:freq}
-    top_urls = defaultdict(int)
-    # split input into inidividual terms and boolean
-    query_indexes.append(key_word)
     # get indexes for each query term from frequencies txt
     indexes = defaultdict(list)
 
@@ -105,6 +101,9 @@ def search_for(stemmed_queries, key_word=None):
     # Find entry for the query in frequencies.txt
     with open('frequencies.txt', 'r') as f:
         for query in stemmed_queries:
+            # dictionary that stores frequencies of query and link => {url:freq} for this specific query
+            top_urls = defaultdict(int)
+
             # Seek to the location in frequencies.txt where the first character of the query first appears
             first_character_location = bookkeeper[query[0]]
             f.seek(first_character_location)
@@ -120,9 +119,20 @@ def search_for(stemmed_queries, key_word=None):
                 entry = f.readline().split('=', 1)
                 if is_after_query(query, entry[0]):
                     break
-    query_indexes.extend([top_urls])
-    result = get_top_five_of(query_indexes, query_len)
-    return result
+            query_indexes[query] = top_urls
+    #query_indexes.extend([top_urls])
+
+    #result = get_top_five_of(query_indexes, query_len)
+    #return result
+    intersection = None
+    for individual_query in query_indexes:
+        if intersection is None:
+            intersection = query_indexes[individual_query].keys()
+        else:
+            intersection = intersection & query_indexes[individual_query].keys()
+    
+    print(intersection)
+    return ""
 
 def is_after_query(query, entry):
     if len(entry) >= len(query):
