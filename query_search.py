@@ -5,27 +5,29 @@ from nltk.stem import PorterStemmer
 import generate_index as gi
 import time
 import re
+import math
 
 ps = PorterStemmer()
 
 
 def get_top_five_of(indexes, intersection):
+    mathed_entries = {}
     top_five = []
-
-    min_top_five = {'frequency': 0}
-
     for url in intersection:
+        total_hits = 0
         for query in indexes:
-            print(url, "hits for", query, "=", indexes[query][url])
-
-    #sorted_dict_list = sorted(indexes[0].items(), key = lambda x:x[1], reverse = True)
-    #count = 0
-    #for url in sorted_dict_list:
-        #if count == 5:
-        #    break
-        #top_five.append(url)
-        #count += 1;
-    return top_five #[url[0] for url in top_five]
+            total_hits += indexes[query][url]
+        for query in indexes:
+            # the weight of the search result is calculated by how far it is from the center of the total weight. So 4 querys for each AND is weighted heigher than 9 for one and 1 for the other.
+            mathed_entries[url] = math.sin((indexes[query][url] / total_hits) * math.pi) * total_hits
+    sorted_dict_list = sorted(mathed_entries.items(), key = lambda x:x[1], reverse = True)
+    count = 0
+    for url, weight in sorted_dict_list:
+        if count == 5:
+            break
+        top_five.append(url)
+        count += 1
+    return top_five
 
 def search_for(stemmed_queries, key_word=None):
     query_indexes = defaultdict(list)
