@@ -96,7 +96,7 @@ def main():
             k_word = "and"
 
         # stem and split the query terms
-        stemmed_queries = [ps.stem(query.strip().lower()) for query in re.split(' and ', queries)]
+        stemmed_queries = [ps.stem(query.strip().lower()) for query in re.split(' and ', queries.lower())]
 
         # print top 5 links
         start = time.time()
