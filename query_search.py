@@ -37,6 +37,9 @@ def search_for(stemmed_queries, key_word=None):
 
     # Load frequencies_bookkeeper.txt into a dictionary
     bookkeeper = defaultdict(int)
+    #remove this before turning in
+    start_collection_time = time.time()
+
     with open('frequencies_bookkeeper.txt', 'r') as b:
         for line in b:
             line = line.rsplit('=')
@@ -64,17 +67,23 @@ def search_for(stemmed_queries, key_word=None):
                 if is_after_query(query, entry[0]):
                     break
             query_indexes[query] = top_urls
-    #query_indexes.extend([top_urls])
-
+    #remove this before turning in
+    end_collection_time = time.time()
+    print("Elapsed data collection time: " + (str)(end_collection_time - start_collection_time))
     #result = get_top_five_of(query_indexes, query_len)
     #return result
     intersection = None
+    start_analyze_time = time.time()
+
     for individual_query in query_indexes:
         if intersection is None:
             intersection = query_indexes[individual_query].keys()
         else:
             intersection = intersection & query_indexes[individual_query].keys()
-    return get_top_five_of(query_indexes, intersection)
+    result = get_top_five_of(query_indexes, intersection)
+    end_analyze_time = time.time()
+    print("Elapsed data analyzing time: " + (str)(end_analyze_time - start_analyze_time))
+    return result
 
 def is_after_query(query, entry):
     if len(entry) >= len(query):
