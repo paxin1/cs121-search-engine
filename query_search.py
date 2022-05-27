@@ -117,7 +117,7 @@ def search_for(stemmed_queries, key_word=None):
                     for f_dict in result:
                         top_urls[f_dict['name']] += f_dict['frequency']
                     break
-                entry = f.readline().split('=', maxsplit=1)
+                entry = f.readline().split('=', 1)
                 if is_after_query(query, entry[0]):
                     break
     query_indexes.extend([top_urls])
@@ -144,7 +144,7 @@ def main():
             k_word = "and"
 
         # stem and split the query terms
-        stemmed_queries = [ps.stem(query.strip().lower()) for query in re.split(' and | ', queries)]
+        stemmed_queries = [ps.stem(query.strip().lower()) for query in re.split(' and ', queries)]
 
         # print top 5 links
         start = time.time()
