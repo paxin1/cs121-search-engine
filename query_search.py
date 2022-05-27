@@ -9,81 +9,23 @@ import re
 ps = PorterStemmer()
 
 
-def get_top_five_of(indexes, length):
-    #get modifier from first element in indexes
-    modifier = indexes.pop(0)
+def get_top_five_of(indexes, intersection):
     top_five = []
 
     min_top_five = {'frequency': 0}
 
-    sorted_dict_list = sorted(indexes[0].items(), key = lambda x:x[1], reverse = True)
-    #handle search with no booleans
-    if modifier is None:
-        #term_indexes = indexes[0]
-        
-        #iterates through indexes and inserts current index in descending order by frequency
-        #for i in range(1, len(term_indexes)):
-            #removes lowest element if needed
-            #if len(top_five) == 5:
-                #if min_top_five['frequency'] < term_indexes[i]['frequency']:
-                    #top_five.append(term_indexes[i]["url"])
-                    #top_five.remove(min(top_five, key=lambda x: x['frequency']))
-                    #min_top_five = min(top_five, key=lambda x: x['frequency'])
-            #else:
-                #top_five.append(term_indexes[i]["url"])
-        count  =0
-        for url in sorted_dict_list:
-            if count == 5:
-                break
-            top_five.append(url)
-            count += 1;
-        
-    #handle search with and boolean
-    elif modifier == 'and':
-        """ print(indexes)
-        running = True
-        while running:
-            docs = []
+    for url in intersection:
+        for query in indexes:
+            print(url, "hits for", query, "=", indexes[query][url])
 
-            #generates list of first doc urls from each term's indexes
-            for term_indexes in indexes:
-                if len(term_indexes) < 2:
-                    running = False
-                else:
-                    docs.append(term_indexes[1]['name'])
-            if not running:
-                break
-            if len(docs) == 0:
-                break
-            #if all indexes on same url handle adding url index to top_five return list
-            if all(x == docs[0] for x in docs):
-                current_freq = sum([term_indexes[1]['frequency'] for term_indexes in indexes])
-                if len(top_five) == 5:
-                    if min_top_five['frequency'] < current_freq:
-                        top_five.append({'name': docs[0], 'frequency': current_freq})
-                        top_five.remove(min(top_five, key=lambda x: x['frequency']))
-                        min_top_five = min(top_five, key=lambda x: x['frequency'])
-                else:
-                    top_five.append({'name': docs[0], 'frequency': current_freq})
-                for term_indexes in indexes:
-                    del term_indexes[1]
-
-            #if doc urls different iterate lowest url
-            else:
-                min_list_pos = docs.index(min(docs))
-                del indexes[min_list_pos][1] """
-       
-        count  =0
-        close_match = length // 2
-        for url in sorted_dict_list:
-            if count == 5:
-                break
-            if url[1] >= length:
-                top_five.append(url)
-                count += 1; 
-    # return the top 5 or less results
-    return [url[0] for url in top_five]
-
+    #sorted_dict_list = sorted(indexes[0].items(), key = lambda x:x[1], reverse = True)
+    #count = 0
+    #for url in sorted_dict_list:
+        #if count == 5:
+        #    break
+        #top_five.append(url)
+        #count += 1;
+    return top_five #[url[0] for url in top_five]
 
 def search_for(stemmed_queries, key_word=None):
     query_indexes = defaultdict(list)
@@ -130,9 +72,7 @@ def search_for(stemmed_queries, key_word=None):
             intersection = query_indexes[individual_query].keys()
         else:
             intersection = intersection & query_indexes[individual_query].keys()
-    
-    print(intersection)
-    return ""
+    return get_top_five_of(query_indexes, intersection)
 
 def is_after_query(query, entry):
     if len(entry) >= len(query):
