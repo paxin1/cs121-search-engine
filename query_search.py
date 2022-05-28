@@ -42,13 +42,13 @@ def search_for(stemmed_queries, key_word=None):
     #remove this before turning in
     start_collection_time = time.time()
 
-    with open('frequencies_bookkeeper2.txt', 'r') as b:
+    with open('frequencies_bookkeeper.txt', 'r') as b:
         for line in b:
             line = line.rsplit('=')
             bookkeeper[line[0]] = int(line[1])
 
     # Find entry for the query in frequencies.txt
-    with open('frequencies2.txt', 'r') as f:
+    with open('frequencies.txt', 'r') as f:
         split_queries = [query.split(' ') for query in stemmed_queries]
         query_words = list(itertools.chain(*split_queries))
         for query in query_words:

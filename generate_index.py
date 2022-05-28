@@ -12,9 +12,9 @@ import time
 
 
 #directory = "DEV2\\aiclub_ics_uci_edu" #directory path to recurse through
-directory = "DEV"
+directory = "BRUH"
 
-batch_size = 500
+batch_size = 8000
 batch_num = 0
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
@@ -27,8 +27,8 @@ def process_directory():
     file_names = []
     for root, dirs, files in os.walk(directory):
         file_names.extend([os.path.join(root, file) for file in files[0:len(files)]])
-    for i in range(0, -(len(file_names)//-batch_size)):
-        current_batch = file_names[i*batch_size:(i+1)*batch_size]
+    for x in range(0, -(len(file_names)//-batch_size)):
+        current_batch = file_names[x*batch_size:(x+1)*batch_size]
         batch_frequencies = defaultdict(list)
         for file in current_batch:
             file_count += 1
@@ -69,7 +69,7 @@ def process_directory():
                 batch_frequencies[item[0]].append({"name": url, "frequency": item[1], "positions": word_positions[item[0]]})
         for item in batch_frequencies.items():
             batch_frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
-        freq_filename = 'frequencies{}-{}.txt'.format(i*batch_size+1,(i+1)*batch_size)
+        freq_filename = 'frequencies{}-{}.txt'.format(x*batch_size+1,(x+1)*batch_size)
         with open(freq_filename, 'w+') as f:
             for k, v in sorted(batch_frequencies.items()):
                 f.write('{}={}\n'.format(k, v))
@@ -107,7 +107,7 @@ def create_txt_report():
             batch_files.append(file)
     frequency_files = [open(file, 'r') for file in batch_files]
     current_lines = [f.readline() for f in frequency_files]
-    with open('frequencies2.txt', 'w+') as f:
+    with open('frequencies.txt', 'w+') as f:
         while frequency_files:
             min_term = min(current_lines, key=lambda x: x.split('=', maxsplit=1)[0]).split('=', maxsplit=1)[0]
             min_term_indexes = [current_lines.index(l) for l in current_lines if l.split('=', maxsplit=1)[0]==min_term]
@@ -133,7 +133,7 @@ def create_txt_report():
 
 def create_txt_bookkeeper():
     current_character = ''
-    with open('frequencies2.txt', 'r') as f, open('frequencies_bookkeeper2.txt', 'w+') as b:
+    with open('frequencies.txt', 'r') as f, open('frequencies_bookkeeper.txt', 'w+') as b:
         location = f.tell()
         line = f.readline()
         while line:
