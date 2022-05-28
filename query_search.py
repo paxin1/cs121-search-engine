@@ -7,20 +7,21 @@ import time
 import re
 import math
 import os
+import itertools
 
 ps = PorterStemmer()
 
 
-def get_top_five_of(indexes, intersection):
+def get_top_five_of(stemmed_queries, indexes, intersection):
     mathed_entries = {}
     top_five = []
     for url in intersection:
         total_hits = 0
-        for query in indexes:
-            total_hits += indexes[query][url]
-        for query in indexes:
+        for query in stemmed_queries:
+            total_hits += indexes[query][url][0]
+        for query in stemmed_queries:
             # the weight of the search result is calculated by how far it is from the center of the total weight. So 4 querys for each AND is weighted heigher than 9 for one and 1 for the other.
-            mathed_entries[url] = math.sin((indexes[query][url] / total_hits) * math.pi) * total_hits
+            mathed_entries[url] = math.sin((indexes[query][url][0] / total_hits) * math.pi) * total_hits
     sorted_dict_list = sorted(mathed_entries.items(), key = lambda x:x[1], reverse = True)
     count = 0
     for url, weight in sorted_dict_list:
@@ -48,9 +49,11 @@ def search_for(stemmed_queries, key_word=None):
 
     # Find entry for the query in frequencies.txt
     with open('frequencies.txt', 'r') as f:
-        for query in stemmed_queries:
+        split_queries = [query.split(' ') for query in stemmed_queries]
+        query_words = list(itertools.chain(*split_queries))
+        for query in query_words:
             # dictionary that stores frequencies of query and link => {url:freq} for this specific query
-            top_urls = defaultdict(int)
+            top_urls = defaultdict(list)
 
             # Seek to the location in frequencies.txt where the first character of the query first appears
             first_character_location = bookkeeper[query[0]]
@@ -62,7 +65,12 @@ def search_for(stemmed_queries, key_word=None):
                     # Result is a list of dicts with keys 'name' (representing url) and 'frequency'
                     result = list(eval(entry[1]))
                     for f_dict in result:
-                        top_urls[f_dict['name']] += f_dict['frequency']
+                        try:
+                            top_urls[f_dict['name']][0] += f_dict['frequency']
+                            top_urls[f_dict['name']][1].extend(f_dict['positions'])
+                        except:
+                            top_urls[f_dict['name']].append(f_dict['frequency'])
+                            top_urls[f_dict['name']].append(f_dict['positions'])
                     break
                 entry = f.readline().split('=', 1)
                 if is_after_query(query, entry[0]):
@@ -76,12 +84,38 @@ def search_for(stemmed_queries, key_word=None):
     intersection = None
     start_analyze_time = time.time()
 
-    for individual_query in query_indexes:
-        if intersection is None:
-            intersection = query_indexes[individual_query].keys()
+    for individual_query in stemmed_queries:
+        if len(individual_query.split(' ')) > 1:
+            query_words = individual_query.split(' ')
+            split_query_keys = [query_indexes[word].keys() for word in query_words]
+            potential_keys = set.intersection(*map(set,split_query_keys))
+            valid_keys = []
+            full_query = defaultdict(list)
+            for key in potential_keys:
+                word_positions = [query_indexes[word][key][1] for word in query_words]
+                full_matches = 0
+                for i in range(0, len(word_positions[0])):
+                    valid = True
+                    start_pos = word_positions[0][i]
+                    for j in range(1, len(query_words)):
+                        if start_pos+j in word_positions[j]:
+                            continue
+                        else:
+                            valid = False
+                            break
+                    if valid:
+                        full_matches += 1
+                if full_matches > 0:
+                    valid_keys.append(key)
+                    full_query[key].append(full_matches)
+            query_indexes[individual_query] = full_query
         else:
-            intersection = intersection & query_indexes[individual_query].keys()
-    result = get_top_five_of(query_indexes, intersection)
+            valid_keys = list(query_indexes[individual_query].keys())
+        if intersection is None:
+            intersection = valid_keys
+        else:
+            intersection = list(set(intersection) & set(valid_keys))
+    result = get_top_five_of(stemmed_queries, query_indexes, intersection)
     end_analyze_time = time.time()
     print("Elapsed data analyzing time: " + (str)(end_analyze_time - start_analyze_time))
     return result
@@ -106,7 +140,7 @@ def main():
             k_word = "and"
 
         # stem and split the query terms
-        stemmed_queries = [ps.stem(query.strip().lower()) for query in re.split(' and ', queries.lower())]
+        stemmed_queries = [' '.join([ps.stem(word) for word in query.strip().lower().split()]) for query in re.split(' and ', queries.lower())]
 
         # print top 5 links
         start = time.time()
