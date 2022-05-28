@@ -12,8 +12,10 @@ import time
 
 
 #directory = "DEV2\\aiclub_ics_uci_edu" #directory path to recurse through
-directory = "D:\\APP_Downloads\\DEV"
+directory = "DEV"
 
+batch_size = 8000
+batch_num = 0
 
 frequencies = defaultdict(list) #inverted index (word -> document posting)
 
@@ -22,15 +24,19 @@ ps = PorterStemmer() #stemmer from nltk library
 #recursively iterate through all files in given directory
 def process_directory():
     file_count = 0
+    file_names = []
     for root, dirs, files in os.walk(directory):
-
-        for file in files:
+        file_names.extend([os.path.join(root, file) for file in files[0:len(files)]])
+    print(len(file_names))
+    for i in range(0, -(len(file_names)//-batch_size)):
+        current_batch = file_names[i*batch_size:(i+1)*batch_size]
+        batch_frequencies = defaultdict(list)
+        for file in current_batch:
             file_count += 1
             #load json data from joined file path
-            file_path = os.path.join(root, file)
             #print(os.path.join(root, file))
             try:
-                f = open(file_path)
+                f = open(file)
                 data = json.load(f)
 
                 url = data["url"]
@@ -53,9 +59,13 @@ def process_directory():
     
             #add words and document postings to inverted index
             for item in cur_frequencies.items():
-                frequencies[item[0]].append({"name": url, "frequency": item[1]})
-    for item in frequencies.items():
-        frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
+                batch_frequencies[item[0]].append({"name": url, "frequency": item[1]})
+        for item in batch_frequencies.items():
+            batch_frequencies[item[0]] = [posting for posting in sorted(item[1], key=lambda x: x['name'])]
+        freq_filename = 'frequencies{}-{}.txt'.format(i*batch_size+1,(i+1)*batch_size)
+        with open(freq_filename, 'w+') as f:
+            for k, v in sorted(batch_frequencies.items()):
+                f.write('{}={}\n'.format(k, v))
     return file_count
 
 #create a analytic report
@@ -84,9 +94,35 @@ def create_csv_report():
     csv_writer.writerows(list(frequencies.items()))
 
 def create_txt_report():
+    batch_files = []
+    for file in os.listdir("."):
+        if re.match("^frequencies[0-9]+-[0-9]+.*$", file):
+            batch_files.append(file)
+    frequency_files = [open(file, 'r') for file in batch_files]
+    current_lines = [f.readline() for f in frequency_files]
     with open('frequencies.txt', 'w+') as f:
-        for k, v in sorted(frequencies.items()):
-            f.write('{}={}\n'.format(k, v))
+        while frequency_files:
+            min_term = min(current_lines, key=lambda x: x.split('=', maxsplit=1)[0]).split('=', maxsplit=1)[0]
+            min_term_indexes = [current_lines.index(l) for l in current_lines if l.split('=', maxsplit=1)[0]==min_term]
+            min_term_index = current_lines.index(min(current_lines, key=lambda x: x.split('=', maxsplit=1)[0]))
+            if len(min_term_indexes) > 1:
+                min_term_postings = [list(eval(current_lines[index].split('=', maxsplit=1)[1])) for index in min_term_indexes]
+                combined_posting = []
+                [combined_posting.extend(posting) for posting in min_term_postings]
+                f.write('{}={}\n'.format(min_term, sorted(combined_posting, key=lambda x: x['name'])))
+            else:
+                f.write(current_lines[min_term_index])
+            to_close = []
+            for min_term_index in min_term_indexes:
+                line = frequency_files[min_term_index].readline()
+                if not line:
+                    to_close.append(min_term_index)
+                else:
+                    current_lines[min_term_index] = line
+            for index in sorted(to_close, reverse=True):
+                frequency_files[index].close()
+                del frequency_files[index]
+                del current_lines[index]
 
 def create_txt_bookkeeper():
     current_character = ''
