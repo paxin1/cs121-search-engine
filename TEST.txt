@@ -1,2 +1,20 @@
+uci
+flower
+pork AND beans # this one did poorly originally because our AND search was malfunctioning, and looking for AND as well as the two terms.
+technology
 fart
-pork AND beans
+software engineering # this one did poorly originally because it was searching for the two seperate words instead of a phrase, which required changing how indexing worked
+circle
+alex thornton # this one did poorly for the same reason as the prior
+weezer # this word did poorly originally as it was at the bottom of the singular index file. implementing index of index made this search extremely fast when it was slow before.
+zygote # this one originally did poorly as the system crashed. the zy part of the original index document was being dropped because it was too big.
+orangutan
+globalize
+deep point # same issues as other 2 word phrases
+ocean AND sea
+cheese AND pizza
+uci AND ics
+anteater
+machine learning AND artificial intelligence #inherited the issues of both AND and phrases, fixed by both prior fixes.
+deep learning
+android
