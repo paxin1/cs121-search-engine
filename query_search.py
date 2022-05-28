@@ -15,13 +15,18 @@ ps = PorterStemmer()
 def get_top_five_of(stemmed_queries, indexes, intersection):
     mathed_entries = {}
     top_five = []
+
+    #iterate through url keys
     for url in intersection:
         total_hits = 0
         for query in stemmed_queries:
             total_hits += indexes[query][url][0]
         for query in stemmed_queries:
             # the weight of the search result is calculated by how far it is from the center of the total weight. So 4 querys for each AND is weighted heigher than 9 for one and 1 for the other.
-            mathed_entries[url] = math.sin((indexes[query][url][0] / total_hits) * math.pi) * total_hits
+            try:    
+                mathed_entries[url] = math.sin((indexes[query][url][0] / total_hits) * math.pi) * total_hits
+            except ZeroDivisionError as e:
+                mathed_entries[url] = 0
     sorted_dict_list = sorted(mathed_entries.items(), key = lambda x:x[1], reverse = True)
     count = 0
     for url, weight in sorted_dict_list:
@@ -39,8 +44,6 @@ def search_for(stemmed_queries, key_word=None):
 
     # Load frequencies_bookkeeper.txt into a dictionary
     bookkeeper = defaultdict(int)
-    #remove this before turning in
-    start_collection_time = time.time()
 
     with open('frequencies_bookkeeper.txt', 'r') as b:
         for line in b:
@@ -60,37 +63,37 @@ def search_for(stemmed_queries, key_word=None):
             f.seek(first_character_location)
             # If an entry is found, add the results to the top_urls dict
             entry = f.readline().split('=', maxsplit=1)
-            while entry[0][0] == query[0]:
+            while entry and entry[0][0] == query[0]:
                 if entry[0] == query:
                     # Result is a list of dicts with keys 'name' (representing url) and 'frequency'
                     result = list(eval(entry[1]))
                     for f_dict in result:
                         try:
-                            top_urls[f_dict['name']][0] += f_dict['frequency']
+                            top_urls[f_dict['name']][0] += f_dict['tfidf']
                             top_urls[f_dict['name']][1].extend(f_dict['positions'])
                         except:
-                            top_urls[f_dict['name']].append(f_dict['frequency'])
+                            top_urls[f_dict['name']].append(f_dict['tfidf'])
                             top_urls[f_dict['name']].append(f_dict['positions'])
                     break
                 entry = f.readline().split('=', 1)
+                if not entry[0]:
+                    break
                 if is_after_query(query, entry[0]):
                     break
             query_indexes[query] = top_urls
-    #remove this before turning in
-    end_collection_time = time.time()
-    print("Elapsed data collection time: " + (str)(end_collection_time - start_collection_time))
-    #result = get_top_five_of(query_indexes, query_len)
-    #return result
     intersection = None
-    start_analyze_time = time.time()
 
     for individual_query in stemmed_queries:
+
+        #handle phrased queries with multiple words
         if len(individual_query.split(' ')) > 1:
             query_words = individual_query.split(' ')
             split_query_keys = [query_indexes[word].keys() for word in query_words]
             potential_keys = set.intersection(*map(set,split_query_keys))
             valid_keys = []
             full_query = defaultdict(list)
+
+            #get positions and keys for each query word, then check if they are next to each other. append as valid key if so
             for key in potential_keys:
                 word_positions = [query_indexes[word][key][1] for word in query_words]
                 full_matches = 0
@@ -109,15 +112,17 @@ def search_for(stemmed_queries, key_word=None):
                     valid_keys.append(key)
                     full_query[key].append(full_matches)
             query_indexes[individual_query] = full_query
+        
+        #append all keys as valid if single worded phrase
         else:
             valid_keys = list(query_indexes[individual_query].keys())
+
+        #get intersection of valid keys
         if intersection is None:
             intersection = valid_keys
         else:
             intersection = list(set(intersection) & set(valid_keys))
     result = get_top_five_of(stemmed_queries, query_indexes, intersection)
-    end_analyze_time = time.time()
-    print("Elapsed data analyzing time: " + (str)(end_analyze_time - start_analyze_time))
     return result
 
 def is_after_query(query, entry):
