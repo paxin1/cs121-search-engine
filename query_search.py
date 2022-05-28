@@ -6,6 +6,7 @@ import generate_index as gi
 import time
 import re
 import math
+import os
 
 ps = PorterStemmer()
 
@@ -113,7 +114,6 @@ def main():
         end = time.time()
         print("Elapsed time: " + (str)(end-start))
 
-
 if __name__ == "__main__":
-    #gi.main() #uncomment if need to initialize index
+    gi.main() #uncomment if need to initialize index
     main()
